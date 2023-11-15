@@ -1,3 +1,23 @@
+variable "ARM_SUBSCRIPTION_ID" {
+  description = "The Subscription ID used for Azure resources"
+  type        = string
+}
+
+variable "ARM_CLIENT_ID" {
+  description = "The Client ID used for Azure resources"
+  type        = string
+}
+
+variable "ARM_CLIENT_SECRET" {
+  description = "The Client Secret ID"
+  type        = string
+}
+
+variable "ARM_TENANT_ID" {
+  description = "The Azure Tenant ID"
+  type        = string
+}
+
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
