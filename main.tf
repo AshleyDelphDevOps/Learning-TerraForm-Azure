@@ -43,6 +43,9 @@ resource "azurerm_linux_virtual_machine" "virtual-machine" {
   admin_username      = var.admin_username
   admin_password      = var.admin_password
 
+# Disable SSH key authentication and enable password authentication
+  disable_password_authentication = false
+
   network_interface_ids = [azurerm_network_interface.T3rra-nic.id]
 
   os_disk {
