@@ -63,7 +63,7 @@ variable "network_interface_name" {
 variable "vm_name" {
   description = "The name of the virtual machine"
   type        = string
-  default     = "Terraform Testing"
+  default     = "Terraform-Testing"
 }
 
 variable "vm_size" {
